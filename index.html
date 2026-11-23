@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-slate-100 ">
+    <div class=" bg-white max-w-md mx-auto mt-7 rounded-lg overflow-hidden">
+        <div class="p-3 bg-indigo-500 text-white font-bold ">
+            <h1>Todo App</h1>
+        </div>
+
+        <div class="p-5">
+            <form id="todo-form" action="" class="bg-white  flex flex-col mb-6 ">
+
+                <div class="flex gap-5">
+                    <input id="todo-input" class="border rounded-md flex-1 p-2 border-slate-400" type="text"
+                    placeholder="enter todo description.">
+
+                <button id="form-btn" type="submit" class="bg-indigo-500 text-white py-1.5 px-5 rounded-md">Add</button>
+                
+                </div>
+                <button type="button" id="cancel-btn"
+                    class="hidden self-end text-xs text-slate-500 hover:text-slate-700 underline cursor-pointer">
+                    Cancel Editing
+                </button>
+
+            </form>
+
+            <div class="flex justify-between text-xs pt-5 pb-2 text-gray-500 border-b border-gray-400">
+                <p id="task-count">TASKS (3)</p>
+                <p id="complete-count">COMPLETED : 0</p>
+            </div>
+            <ul class="py-5" id="todo-list">
+               
+            </ul>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
